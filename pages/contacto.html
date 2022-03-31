@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>munouruguay</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../assets/icon/muno_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2884e641ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="body">
+    <div id="pageContainer">
+        <div id="contentWrap">
+            <header class="header">
+                <nav class="nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="nav__barBtn"><i class="fa-solid fa-bars"></i></label>
+                    <div class="nav__logo">
+                        <a href="../index.html"><img src="../assets/icon/muno_logo.png" alt="Home" height="85px"></a>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link menu__link--orange" href="tienda.html">tienda</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--green" href="sobre-mi.html">Sobre mi</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--blue" href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <div class="nav_cart">
+                        <a href="carrito.html"><img src="../assets/icon/shopping-bag.png" alt="Carrito" height="60"></a>
+                    </div>
+                </nav>
+            </header>
+            <div class="spacer">&nbsp;</div>
+            <main class="contacto-main">
+                <div class="container-titulo">
+                    <h1 class="titulo-contacto__texto">Contáctanos</h1>
+                </div>  
+                <!--Contact form-->
+
+                    <div class="container-form">
+                        <h2 class="container-form__titulo">Mándanos un Email</h2>
+                        <form class="form" action="procesar.php" method="post">
+                            
+                            <label for="nombre-y-apellido"></label>                      
+                            <div class="container-input">
+                                <input class="input input__texto" type="text" name="nombre-y-apellido" placeholder="Nombre y Apellido">
+                            </div>
+                            
+                            <label for="correo"></label>
+                            <div class="container-input">
+                                <input class="input input__correo" type="email" name="correo" placeholder="Correo" required>
+                            </div>
+                            
+                            <label for="telefono"></label>
+                            <div class="container-input">
+                                <input class="input input__telefono" type="tel" name="telefono" placeholder="Telefono">
+                            </div>
+                            
+                            <label for="textarea"></label>
+                            <div class="container-input">
+                                <textarea class="input input__textarea" id="" name="contact-textarea" rows="8" cols="40" required placeholder="Escribe aquí tu mensaje..." maxlength="500"></textarea>
+                            </div>
+                            
+                            <div>
+                                <input class="form__btn" type="submit" name="Enviar" id="">
+                                <input class="form__btn" type="reset" name="Borrar" id="">
+                            </div>
+                        </form>
+                    </div>
+                    <!--Contactinfo-->
+
+                    <div class="container-contactinfo">
+                        <h2 class="container-contactinfo__titulo">Informacion de contacto</h2>
+                        <div class="container-contactinfo__content">
+                            <h4>Av.Chile y Lima, Punta Negra, Uruguay</h4>
+                            <h4>+598 98 578 969</h4>
+                        </div>
+                    </div>
+
+            </main>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="footer__container">
+                <div class="box">
+                    <div class="box__redes">
+                        <a target="_blank" href="https://instagram.com/munouruguay?utm_medium=copy_link"><img
+                                class="box__img" src="../assets/icon/Instagram_logo.svg" alt="Instagram"></a>
+                        <a target="_blank" href="https://www.whatsapp.com/catalog/59898578969/?app_absent=0"><img
+                                class="box__img" src="../assets/icon/WhatsApp.svg" alt="whatsapp logo"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>munouruguay</p>
+                    <p>+598 98 578 969</p>
+                    <small>&copy; 2022 <b>Muno</b> - Todos Los Derechos Reservados.</small>
+                </div>
+                <div class="box">
+                    <div class="box__pagos">
+                        <img class="box__img" src="../assets/icon/Visa_Inc._logo.svg.png" alt="Visa">
+                        <img class="box__img" src="../assets/icon/Mastercard_2019_logo.svg" alt="Mastercard">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
