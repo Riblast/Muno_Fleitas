@@ -570,6 +570,14 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
         grid-row: 4/6;
     }
 }
+/*------------responsive Home-----------*/
+@media screen and (max-width:480px) {
+    .presentacion-inicio{
+        width: auto;
+        margin: 3rem;
+    }
+}
+
 /*------------responsive sobremi-----------*/
 @media screen and (max-width:768px) {
     .container-perfil {
