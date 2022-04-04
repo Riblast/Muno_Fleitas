@@ -571,10 +571,13 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
     }
 }
 /*------------responsive Home-----------*/
-@media screen and (max-width:480px) {
+@media screen and (max-width:650px) {
     .presentacion-inicio{
         width: auto;
         margin: 3rem;
+    }
+    .presentacion-inicio__titulo{
+        font-size: 25px;
     }
 }
 
