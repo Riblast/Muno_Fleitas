@@ -546,7 +546,7 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
 }
 @media screen and (max-width:330px) {
     .box {
-        font-size: px;
+        font-size: 8px;
     }
 }
 /*------------responsive contacto-----------*/
