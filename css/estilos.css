@@ -196,33 +196,6 @@ main{
     color: rgb(255, 115, 0);
     text-shadow: 1px 1px 2px black;
 }
-
-.contenedor-articulos {
-    display: flex;
-    position: relative;
-    justify-content: space-around;
-    margin: 2rem;
-    flex-wrap: wrap;
-    flex: 1 1 30%;
-    height: 100%;
-    border: 2px solid rgb(255, 115, 0);
-}
-
-.articulo {
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 2%;
-    height: 100%;
-    flex: 1 1 25%;
-    margin: 20px;
-    min-width: 195px;
-    max-width: 300px;
-    background: #C6FFDD;
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    cursor: pointer;
-}
-
 /*------------Sobre mi-----------*/
 .sobremi-main {
     text-align: center;
