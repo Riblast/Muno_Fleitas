@@ -213,6 +213,8 @@ main{
 }
 
 .container-perfil {
+    justify-content: center;
+    align-items: center;
     display: flex;
     margin: 2rem;
     margin-left: 2rem;
@@ -448,14 +450,56 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
 
 @keyframes shadow-pop-br {
     0% {
-      box-shadow: 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1;
-      transform: translateX(0) translateY(0);
+    box-shadow: 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1;
+    transform: translateX(0) translateY(0);
     }
     100% {
-      box-shadow: 1px 1px #725AC1, 2px 2px #725AC1, 3px 3px #725AC1, 4px 4px #725AC1, 5px 5px #725AC1, 6px 6px #725AC1, 7px 7px #725AC1, 8px 8px #725AC1;
-      transform: translateX(-8px) translateY(-8px);
+    box-shadow: 1px 1px #725AC1, 2px 2px #725AC1, 3px 3px #725AC1, 4px 4px #725AC1, 5px 5px #725AC1, 6px 6px #725AC1, 7px 7px #725AC1, 8px 8px #725AC1;
+    transform: translateX(-8px) translateY(-8px);
     }
-  }
+}
+.alert__carrito {
+    position: fixed;
+    display: none;
+    border-radius: 10%;
+    width: 25vw;
+    opacity: 0.5;
+    color: black;
+}
+#carrito-alert {
+    display: none
+}
+
+#carrito-alert:checked~.alert {
+    display: block;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    }
+}
+@keyframes scale-in-center {
+    0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    }
+}
+
 
 /*------------responsive header-----------*/
 
@@ -593,5 +637,11 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+
     .container-pago{
         grid-column: 1/2;
         grid-row: 6/9;
+    }
+    .buttons-carrito__finalizar{
+        grid-row: 9/10;
+    }
+    .buttons-carrito__actualizar {
+        grid-row: 5/6;
     }
 }

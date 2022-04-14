@@ -37,6 +37,7 @@
             </header>
             <div class="spacer">&nbsp;</div>
             <main class="carrito-main">
+                
                 <div class="container-items">
                     <div class="items">
                         <div class="item"><p>Item One</p><i class="fa-solid fa-pencil"><i class="fa-solid fa-trash-can"></i></i></div>
@@ -48,8 +49,12 @@
                     <div class="pago"></div>
                 </div>
                 <!--Buttons-->
-                <p><input class="buttons-carrito shadow-pop-br" type="button" name="actualizar carrito" value="Actualizar carrito" id=""></p>
-                <p><input class="buttons-carrito shadow-pop-br" type="button" name="finalizar compra" value="Finalizar compra" id=""></p>
+                <input type="checkbox" id="carrito-alert">
+                <label class="buttons-carrito__finalizar" for="carrito-alert"><p class="buttons-carrito buttons-carrito__finalizar shadow-pop-br">finalizar compra</p></label>
+                <div class="alert alert-success alert__carrito scale-in-center" role="alert" id="">
+                    Muchas gracias por comprar!
+                </div>
+                <p class="buttons-carrito__actualizar"><input class="buttons-carrito buttons-carrito__actualizar shadow-pop-br" type="button" name="actualizar carrito" value="actualizar carrito" id=""></p>
             </main>
         </div>
         <footer class="footerNobootstrap">
