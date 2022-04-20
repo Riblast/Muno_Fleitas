@@ -147,10 +147,14 @@ main{
 }
 
 .box {
+    height: auto;
     display: flex;
-    flex-direction: column;
-    padding: 10px;
-    color: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
 }
 .box p{
     margin: 0;

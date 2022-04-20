@@ -1,18 +1,248 @@
-/* Error: There is no module with the namespace "variables".
- *    ,
- * 44 |             background: variables.$menuHeader;
- *    |                         ^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\_header.scss 44:16  @use
- *   sass\main.scss 2:1       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "variables".\a    \2577 \a 44 \2502              background: variables.$menuHeader;\d\a    \2502                          ^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\_header.scss 44:16  @use\a   sass\\main.scss 2:1       root stylesheet';
+/* ---------Typhografy-------*/
+/* ---------Colors-------*/
+/*------Header------*/
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  z-index: 100;
+  border-bottom: 2px solid #201f1f;
 }
+.header .navHeader {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navHeader .nav__logo {
+  padding: 0 15px 0 15px;
+}
+.header .navHeader .nav__cart {
+  padding: 0 15px 0 15px;
+}
+.header .navHeader .nav__barBtn {
+  font-size: 40px;
+  color: black;
+}
+.header .navHeader #check {
+  display: none;
+}
+.header .navHeader #check:checked ~ .menuHeader {
+  height: 100vh;
+}
+.header .navHeader #check:checked ~ .menuHeader li {
+  display: block;
+}
+.header .navHeader .menuHeader {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background: black;
+  text-align: center;
+  transition: all 0.5;
+}
+.header .navHeader .menuHeader .menu__item {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  transition: all 0.5s;
+}
+.header .navHeader .menuHeader .menu__item .menu__link {
+  color: white;
+  font-size: 25px;
+  text-align: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+}
+.header .navHeader .menuHeader .menu__item .menu__link--orange:hover {
+  color: rgb(255, 115, 0);
+  font-size: 27px;
+  transition: 0.01s;
+}
+.header .navHeader .menuHeader .menu__item .menu__link--green:hover {
+  color: rgb(1, 255, 56);
+  font-size: 27px;
+  transition: 0.01s;
+}
+.header .navHeader .menuHeader .menu__item .menu__link--blue:hover {
+  color: rgb(18, 1, 255);
+  font-size: 27px;
+  transition: 0.01s;
+}
+
+/*------Header responsive------*/
+@media screen and (min-width: 768px) {
+  .menuHeader {
+    display: flex;
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .menuHeader .menu__item {
+    display: inline-block;
+    transition: none;
+  }
+  .menuHeader .menu__item .menu__link {
+    margin: 0 5px 0 5px;
+    transition: none;
+  }
+  .menuHeader .menu__item .menu__link:hover {
+    font-size: 25px;
+    padding: 5px;
+  }
+  .menuHeader .menu__item .menu__link--orange {
+    color: rgb(255, 115, 0);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3px;
+    border: 2px solid rgb(255, 115, 0);
+    border-radius: 15px;
+  }
+  .menuHeader .menu__item .menu__link--green {
+    color: rgb(1, 255, 56);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3px;
+    border: 2px solid rgb(1, 255, 56);
+    border-radius: 15px;
+  }
+  .menuHeader .menu__item .menu__link--blue {
+    color: rgb(18, 1, 255);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 3px;
+    border: 2px solid rgb(18, 1, 255);
+    border-radius: 15px;
+  }
+}
+/* --------footer------- */
+.footerNobootstrap {
+  background-color: rgb(32, 31, 31);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 6rem;
+}
+.footerNobootstrap .footer__container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+.footerNobootstrap .footer__container .box {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+.footerNobootstrap .footer__container .box .box__text {
+  display: block;
+}
+.footerNobootstrap .footer__container .box .box__text p {
+  margin: 0;
+}
+.footerNobootstrap .footer__container .box .box__redes img {
+  width: 30px;
+}
+.footerNobootstrap .footer__container .box .box__pagos img {
+  width: 30px;
+}
+
+/*------------responsive footer-----------*/
+@media screen and (max-width: 450px) {
+  .box {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 403px) {
+  .box {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .box {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .box {
+    font-size: 8px;
+  }
+}
+.inicio-main {
+  align-items: center;
+  text-align: center;
+}
+.inicio-main .fondo-muno {
+  position: fixed;
+  height: 60vh;
+  left: 10vw;
+  top: 30vh;
+  z-index: -1;
+}
+.inicio-main .presentacion-inicio {
+  display: inline-block;
+  margin: 5rem;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  width: 50vw;
+  border: 2px solid aqua;
+  border-radius: 2%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.849);
+  font-family: "Oswald", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 6rem);
+}
+
+.spacer {
+  width: 100%;
+  height: 95px;
+}
+
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+#contentWrap {
+  padding-bottom: 6rem;
+}
+
+/*# sourceMappingURL=main.css.map */

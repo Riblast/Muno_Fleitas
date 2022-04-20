@@ -1,6 +1,11 @@
-@use "variables" as *;
-@use "header" as *;
-@use "footer" as *;
+@use "utilities/variables";
+@use "layout/header";
+@use "layout/footer";
+@use "pages/home";
+@use "pages/carrito";
+@use "pages/contacto";
+@use "pages/sobre-mi";
+@use "pages/tienda";
 * {
 	margin: 0;
 	padding: 0;
@@ -10,7 +15,7 @@
 }
 body {
 	background-color: rgba(255, 255, 255, 0.849);
-	font-family: $fontFamily;
+	font-family: variables.$fontFamily;
 }
 main {
 	min-height: calc(100vh - 6rem);

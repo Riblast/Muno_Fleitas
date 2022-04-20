@@ -1,0 +1,71 @@
+@use "../utilities/variables";
+/* --------footer------- */
+.footerNobootstrap{
+    background-color: variables.$footer-color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 6rem;
+    .footer__container{
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        .box{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            align-items: center;
+            text-align: center;
+            color: black;
+            .box__text{
+                display: block;
+                p{
+                    margin: 0;
+                }
+            }
+            .box__redes{
+                img{
+                    width: 30px;
+                }
+            }
+            .box__pagos{
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+/*------------responsive footer-----------*/
+@media screen and (max-width:450px) {
+    .box {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:403px) {
+    .box {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .box {
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:330px) {
+    .box {
+        font-size: 8px;
+    }
+}
