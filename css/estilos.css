@@ -155,11 +155,14 @@ main{
     margin: auto;
     align-items: center;
     text-align: center;
+    color: black;
 }
 .box p{
     margin: 0;
 }
-
+.box__text{
+    display: inline-block;
+}
 .box__img {
     width: 30px;
 }

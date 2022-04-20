@@ -23,6 +23,9 @@
 		.nav__barBtn {
 			font-size: 40px;
 			color:black;
+			padding: 0 15px 0 15px;
+			margin-right: 0px;
+			cursor: pointer;
 		}
 		#check {
 			display: none;
@@ -53,7 +56,6 @@
 				.menu__link {
 					color: white;
 					font-size: 25px;
-					text-align: 25px;
 					text-transform: uppercase;
 					font-weight: 600;
 					text-decoration: none;
@@ -85,6 +87,10 @@
 }
 /*------Header responsive------*/
 @media screen and (min-width: 768px) {
+	
+	.nav__barBtn {
+        display: none;
+    }
 	.menuHeader {
 		display: flex;
 		position: relative;

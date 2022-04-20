@@ -26,6 +26,9 @@
 .header .navHeader .nav__barBtn {
   font-size: 40px;
   color: black;
+  padding: 0 15px 0 15px;
+  margin-right: 0px;
+  cursor: pointer;
 }
 .header .navHeader #check {
   display: none;
@@ -54,7 +57,6 @@
 .header .navHeader .menuHeader .menu__item .menu__link {
   color: white;
   font-size: 25px;
-  text-align: 25px;
   text-transform: uppercase;
   font-weight: 600;
   text-decoration: none;
@@ -77,6 +79,10 @@
 
 /*------Header responsive------*/
 @media screen and (min-width: 768px) {
+  .nav__barBtn {
+    display: none;
+  }
+
   .menuHeader {
     display: flex;
     position: relative;
@@ -212,6 +218,17 @@
   width: 50vw;
   border: 2px solid aqua;
   border-radius: 2%;
+}
+
+.tienda-main {
+  text-align: center;
+  align-items: center;
+}
+.tienda-main .tienda-main__titulo {
+  margin-top: 2rem;
+  font-size: 60px;
+  color: rgb(255, 115, 0);
+  text-shadow: 1px 1px 2px black;
 }
 
 * {
