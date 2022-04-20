@@ -22,3 +22,15 @@
         border-radius: 2%;
     }
 }
+/*------------responsive Home-----------*/
+@media screen and (max-width:650px) {
+    .inicio-main{
+        .presentacion-inicio{
+            width: auto;
+            margin: 3rem;
+            .presentacion-inicio__titulo{
+                font-size: 25px;
+            }
+        }
+    }
+}

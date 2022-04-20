@@ -1,3 +1,45 @@
 @use "../utilities/variables";
 @use "../layout/header";
 @use "../layout/footer";
+
+.sobremi-main{
+    text-align: center;
+    align-items: center;
+    background-image: url(../assets/img/background.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .sobremi-main__titulo{
+        margin-top: 2rem;
+        font-size: 60px;
+        color: rgb(1, 255, 56);
+        text-shadow: 1px 1px 2px black;
+    }
+    .container-perfil{
+        justify-content: center;
+        display: flex;
+        margin: 2rem;
+        margin-left: 2rem;
+        .perfil{
+            border: 2px solid rgb(18, 1, 255);
+            border-radius: 2%;
+        }
+        .texto-sobremi{
+            display: inline-block;
+            position: relative;
+            border: 2px solid orange;
+            border-radius: 2%;
+            margin: 2rem;
+            width: 50vw;
+        }
+    }
+}
+/*------------responsive sobremi-----------*/
+@media screen and (max-width:768px) {
+    .sobremi-main{
+        .container-perfil {
+            display: inline-block;
+        }
+    }
+
+}

@@ -1,3 +1,128 @@
 @use "../utilities/variables";
 @use "../layout/header";
 @use "../layout/footer";
+@use "../components/buttons";
+
+.contacto-main{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1,0.5fr 2,1fr);
+    .container-titulo{
+        align-items: center;
+        text-align: center;
+        grid-column: 1/9;
+        height: fit-content;
+        .titulo-contacto__texto{
+            font-size: 70px;
+        }
+    }
+    .container-form{
+        display: inline-block;
+        width: auto;
+        max-width: 600px;
+        height:max-content;
+        margin: 2vw;
+        padding: 2rem;
+        position: relative;
+        text-align: center;
+        border-radius: 5%;
+        grid-column: 1/6;
+        grid-row: 2/4;
+        border: 2px solid red;
+        background: #2980B9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .container-form__titulo{
+            margin: 10px;
+            align-content: center;
+        }
+        .contactForm{
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            text-align: center;
+            justify-content: space-between;
+            .container-input{
+                width: 100%;
+                height: auto;
+                .contactInput{
+                    width: 100%;
+                    &::placeholder{
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        opacity: 40%;
+                    }
+                }
+            }
+            .contactInput__texto::placeholder{
+                color: red;
+            }
+            .contactInput__correo::placeholder{
+                color: variables.$orange;
+            }
+            .contactInput__telefono::placeholder{
+                color: variables.$green;
+            }
+            .contactInput__textarea{
+                width: 100%;
+                resize: none;
+                &::placeholder{
+                    color: variables.$violet;
+                }
+            }
+            .form__buttons{
+                .form__btn{
+                    @include buttons.form__button;
+                }
+            }
+        }
+    }
+    .container-contactinfo{
+        display: inline-block;
+        position: relative;
+        height: max-content;
+        width: auto;
+        max-width: 600px;
+        border: 2px solid red;
+        border-radius: 5%;
+        grid-row: 2/4;
+        grid-column: 6/9;
+        padding: 2rem;
+        margin: 2vw;
+        background: #2980B9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .container-contactinfo__titulo{
+            margin: 10px;
+        }
+        .container-contactinfo__content{
+            font-weight: 100;
+            font-size: 15px;
+            opacity: 80%;
+            margin: 5px;
+        }
+    }
+}
+/*------------responsive contacto-----------*/
+@media screen and (max-width:768px) {
+    .contacto-main{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1,0.5 3,1fr);
+        margin: auto;
+        width: 80%;
+        .container-titulo{
+            grid-column: 1/6;
+        }
+        .container-form{
+            grid-column: 1/6;
+            grid-row: 2/4;
+        }
+        .container-contactinfo{
+            grid-column: 1/6;
+            grid-row: 4/6;
+        }
+    }
+}

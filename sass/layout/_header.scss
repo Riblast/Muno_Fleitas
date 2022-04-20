@@ -91,53 +91,58 @@
 	.nav__barBtn {
         display: none;
     }
-	.menuHeader {
-		display: flex;
-		position: relative;
-		height: 100px;
-		top: 0;
-		background: none;
-		transition: none;
-		text-align: left;
-		margin-bottom: 10px;
-		.menu__item{
-			display: inline-block;
-			transition: none;
-			.menu__link{
-				margin: 0 5px 0 5px;
+	.header{
+		.navHeader{
+			.menuHeader {
+				display: flex;
+				position: relative;
+				height: 100px;
+				top: 0;
+				background: none;
 				transition: none;
-				&:hover{
-					font-size: 25px;
-					padding: 5px;
+				text-align: left;
+				margin-bottom: 10px;
+				.menu__item{
+					display: inline-block;
+					transition: none;
+					.menu__link{
+						margin: 0 5px 0 5px;
+						transition: none;
+						&:hover{
+							font-size: 25px;
+							padding: 5px;
+						}
+					}
+					.menu__link--orange{
+						color: variables.$orange;
+						font-size: 25px;
+						text-transform: uppercase;
+						font-weight: 500;
+						padding: 3px;
+						border: 2px solid variables.$orange;
+						border-radius: 15px;
+					}
+					.menu__link--green{
+						color: variables.$green;
+						font-size: 25px;
+						text-transform: uppercase;
+						font-weight: 500;
+						padding: 3px;
+						border: 2px solid variables.$green;
+						border-radius: 15px;
+					}
+					.menu__link--blue{
+						color: variables.$violet;
+						font-size: 25px;
+						text-transform: uppercase;
+						font-weight: 500;
+						padding: 3px;
+						border: 2px solid variables.$violet;
+						border-radius: 15px;
+					}
 				}
-			}
-			.menu__link--orange{
-				color: variables.$orange;
-				font-size: 25px;
-				text-transform: uppercase;
-				font-weight: 500;
-				padding: 3px;
-				border: 2px solid variables.$orange;
-				border-radius: 15px;
-			}
-			.menu__link--green{
-				color: variables.$green;
-				font-size: 25px;
-				text-transform: uppercase;
-				font-weight: 500;
-				padding: 3px;
-				border: 2px solid variables.$green;
-				border-radius: 15px;
-			}
-			.menu__link--blue{
-				color: variables.$violet;
-				font-size: 25px;
-				text-transform: uppercase;
-				font-weight: 500;
-				padding: 3px;
-				border: 2px solid variables.$violet;
-				border-radius: 15px;
 			}
 		}
 	}
+	
 }
