@@ -1,3 +1,5 @@
+@use "../utilities/variables";
+
 @mixin form__button {
     display:inline-block;
     padding:0.3em 1.2em;
@@ -12,7 +14,7 @@
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
-    background-color: #f14ebd;
+    background-color: variables.$orange;
     &:hover{
         border-color: rgb(0, 0, 0);
     }

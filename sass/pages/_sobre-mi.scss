@@ -31,6 +31,12 @@
             border-radius: 2%;
             margin: 2rem;
             width: 50vw;
+            h1{
+                font-size: map-get(variables.$estilos-cards, tFuenteTitle);
+            }
+            p{
+                font-size: map-get(variables.$estilos-cards, tFuentesDesc);
+            }
         }
     }
 }

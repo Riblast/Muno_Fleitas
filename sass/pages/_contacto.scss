@@ -76,6 +76,10 @@
                 .form__btn{
                     @include buttons.form__button;
                 }
+                .form__btn--reset{
+                    @extend .form__btn;
+                    background-color: red;
+                }
             }
         }
     }

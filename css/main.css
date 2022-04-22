@@ -1,5 +1,6 @@
 /* ---------Typhografy-------*/
 /* ---------Colors-------*/
+/* ---------Map-------*/
 /*------Header------*/
 .header {
   position: fixed;
@@ -453,7 +454,7 @@
 .contacto-main .container-form .contactForm .contactInput__textarea::placeholder {
   color: rgb(18, 1, 255);
 }
-.contacto-main .container-form .contactForm .form__buttons .form__btn {
+.contacto-main .container-form .contactForm .form__buttons .form__btn, .contacto-main .container-form .contactForm .form__buttons .form__btn--reset {
   display: inline-block;
   padding: 0.3em 1.2em;
   margin: 0 0.1em 0.1em 0;
@@ -467,10 +468,13 @@
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: all 0.2s;
-  background-color: #f14ebd;
+  background-color: rgb(255, 115, 0);
 }
-.contacto-main .container-form .contactForm .form__buttons .form__btn:hover {
+.contacto-main .container-form .contactForm .form__buttons .form__btn:hover, .contacto-main .container-form .contactForm .form__buttons .form__btn--reset:hover {
   border-color: rgb(0, 0, 0);
+}
+.contacto-main .container-form .contactForm .form__buttons .form__btn--reset {
+  background-color: red;
 }
 .contacto-main .container-contactinfo {
   display: inline-block;
@@ -554,7 +558,9 @@
   margin: 2rem;
   width: 50vw;
 }
-
+.sobremi-main .container-perfil .texto-sobremi h1 {
+  font-size: 35px;
+}
 /*------------responsive sobremi-----------*/
 @media screen and (max-width: 768px) {
   .sobremi-main .container-perfil {
