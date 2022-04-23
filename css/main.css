@@ -373,17 +373,24 @@
 @media screen and (max-width: 530px) {
   .carrito-main {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+  .carrito-main .carrito-main__titulo {
+    margin-top: 2rem;
+    font-size: 60px;
+    text-shadow: 1px 1px 2px black;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
   .carrito-main .container-pago {
     grid-column: 1/2;
-    grid-row: 6/9;
+    grid-row: 7/10;
   }
   .carrito-main .buttons-carrito__finalizar {
-    grid-row: 9/10;
+    grid-row: 10/11;
   }
   .carrito-main .buttons-carrito__actualizar {
-    grid-row: 5/6;
+    grid-row: 6/7;
   }
 }
 .contacto-main {
