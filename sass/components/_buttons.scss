@@ -36,15 +36,14 @@
     border: 2px solid #725AC1;
     border-radius: 10px;
     transform: scale(0.9);
-    &:hover{
-        color: #725AC1;
-    }
-}
+        &:hover{
+            color: #725AC1;
+        }
+    }        
     .shadow-pop-br:hover {
         -webkit-animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
                 animation: shadow-pop-br 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    }
-    
+    } 
     @keyframes shadow-pop-br {
         0% {
         box-shadow: 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1, 0 0 #725AC1;
@@ -55,5 +54,4 @@
         transform: translateX(-8px) translateY(-8px);
         }
     }
-
 }
