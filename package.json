@@ -1,7 +1,7 @@
 {
   "name": "muno",
   "version": "1.0.0",
-  "description": "",
+  "description": "e-commerce de muñecos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
