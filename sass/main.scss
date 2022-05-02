@@ -17,6 +17,9 @@
 body {
 	background-color: rgba(255, 255, 255, 0.849);
 	font-family: variables.$fontFamily;
+		p{
+			font-size: 20px ;
+		}
 }
 main {
 	min-height: calc(100vh - 6rem);

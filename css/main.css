@@ -210,6 +210,9 @@
   top: 30vh;
   z-index: -1;
 }
+.inicio-main .alert {
+  font-size: 20px;
+}
 .inicio-main .presentacion-inicio {
   display: inline-block;
   margin: 5rem;
@@ -609,6 +612,9 @@
 body {
   background-color: rgba(255, 255, 255, 0.849);
   font-family: "Oswald", sans-serif;
+}
+body p {
+  font-size: 20px;
 }
 
 main {
