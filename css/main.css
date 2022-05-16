@@ -215,6 +215,7 @@
 }
 .inicio-main .presentacion-inicio {
   display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 5rem;
   padding: 2rem;
   text-align: center;
@@ -428,9 +429,9 @@
   border: 2px solid red;
   background: #2980B9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: -webkit-linear-gradient(to right, #6DD5FA, #2980B9);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to right, #6DD5FA, #2980B9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contacto-main .container-form .container-form__titulo {
@@ -510,9 +511,9 @@
   margin: 2vw;
   background: #2980B9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: -webkit-linear-gradient(to right, #6DD5FA, #2980B9);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to right, #6DD5FA, #2980B9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .contacto-main .container-contactinfo .container-contactinfo__titulo {
@@ -599,6 +600,9 @@
   font-size: 60px;
   text-shadow: 1px 1px 2px black;
   color: rgb(255, 115, 0);
+}
+.tienda-main .card {
+  border: rgb(255, 115, 0) 1px solid;
 }
 
 * {

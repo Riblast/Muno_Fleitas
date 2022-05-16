@@ -9,4 +9,7 @@
         @include variables.estilo-titulo;
         color: variables.$orange;
     }
+    .card{
+        border: variables.$orange 1px solid;
+    }
 }
