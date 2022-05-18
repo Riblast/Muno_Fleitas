@@ -29,6 +29,7 @@
             border-radius: 2%;
             margin: 2rem;
             width: 50vw;
+            height: fit-content;
             h1{
                 font-size: map-get(variables.$estilos-cards, tFuenteTitle);
             }
