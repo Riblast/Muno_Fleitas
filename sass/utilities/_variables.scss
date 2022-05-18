@@ -1,5 +1,9 @@
 /* ---------Typhografy-------*/
-$fontFamily: 'Oswald', sans-serif;
+@font-face{
+    font-family: "moreSugar";
+    src: url("../../assets/fonts/more_sugar_font/MoreSugar-Thin.ttf") format("truetype");
+}
+$fontFamily: "moreSugar", "Oswald";
 /* ---------Colors-------*/
 $white: #FFFFFF;
 $borderHeader: rgb(32, 31, 31);

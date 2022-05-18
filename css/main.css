@@ -1,4 +1,8 @@
 /* ---------Typhografy-------*/
+@font-face {
+  font-family: "moreSugar";
+  src: url("../../assets/fonts/more_sugar_font/MoreSugar-Thin.ttf") format("truetype");
+}
 /* ---------Colors-------*/
 /* ---------Map-------*/
 /*------Header------*/
@@ -179,7 +183,7 @@
 }
 
 /*------------responsive footer-----------*/
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 453px) {
   .box {
     font-size: 13px;
   }
@@ -213,10 +217,11 @@
 .inicio-main .alert {
   font-size: 20px;
 }
-.inicio-main .presentacion-inicio {
+.inicio-main .presentacion-inicio, .inicio-main .presentacion-inicio-info {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   margin: 5rem;
+  margin-top: 3rem;
   padding: 2rem;
   text-align: center;
   align-items: center;
@@ -224,14 +229,18 @@
   border: 2px solid aqua;
   border-radius: 2%;
 }
+.inicio-main .presentacion-inicio-info {
+  margin-top: 0;
+  font-size: 20px;
+}
 
 /*------------responsive Home-----------*/
 @media screen and (max-width: 650px) {
-  .inicio-main .presentacion-inicio {
+  .inicio-main .presentacion-inicio, .inicio-main .presentacion-inicio-info {
     width: auto;
     margin: 3rem;
   }
-  .inicio-main .presentacion-inicio .presentacion-inicio__titulo {
+  .inicio-main .presentacion-inicio .presentacion-inicio__titulo, .inicio-main .presentacion-inicio-info .presentacion-inicio__titulo {
     font-size: 25px;
   }
 }
@@ -305,6 +314,7 @@
   padding: 15px 30px;
   text-align: center;
   font-size: 18px;
+  font-weight: 800;
   letter-spacing: 1px;
   text-decoration: none;
   color: #725AC1;
@@ -475,6 +485,9 @@
 .contacto-main .container-form .contactForm .contactInput__textarea::placeholder {
   color: rgb(18, 1, 255);
 }
+.contacto-main .container-form .contactForm .form__buttons {
+  margin-top: 15px;
+}
 .contacto-main .container-form .contactForm .form__buttons .form__btn, .contacto-main .container-form .contactForm .form__buttons .form__btn--reset {
   display: inline-block;
   padding: 0.3em 1.2em;
@@ -483,7 +496,6 @@
   border-radius: 2em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #FFFFFF;
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
@@ -602,7 +614,7 @@
   color: rgb(255, 115, 0);
 }
 .tienda-main .card {
-  border: rgb(255, 115, 0) 1px solid;
+  border: rgb(1, 255, 56) 1px solid;
 }
 
 * {
@@ -615,7 +627,7 @@
 
 body {
   background-color: rgba(255, 255, 255, 0.849);
-  font-family: "Oswald", sans-serif;
+  font-family: "moreSugar", "Oswald";
 }
 body p {
   font-size: 20px;

@@ -16,14 +16,20 @@
     }
     .presentacion-inicio{
         display: inline-block;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.7);
         margin: 5rem;
+        margin-top: 3rem;
         padding: 2rem;
         text-align: center;
         align-items: center;
         width: 50vw;
         border: 2px solid aqua;
         border-radius: 2%;
+    }
+    .presentacion-inicio-info{
+        @extend .presentacion-inicio;
+        margin-top: 0;
+        font-size: 20px;
     }
 }
 /*------------responsive Home-----------*/
